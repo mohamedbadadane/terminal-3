@@ -1,1 +1,33 @@
+cat wilders.csv
+grep "France,2019,PHP" < wilders.csv > php_france_2019.csv
+rm php_france_2019.csv 
+grep "France,2019,PHP" < wilders.csv | wc -l php_france_2019.csv
+touch php_france_2019.csv
+grep "France,2019,PHP" < wilders.csv | wc -l php_france_2019.csv 
+grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv 
+cat php_france_2019.csv 
+grep "Biarritz,France,2017,JavaScript" < wilders.csv > biarritz2017.csv
+cat biarritz2017.csv 
+grep "Biarritz,France,2019,JavaScript" < wilders.csv > biarritz2019.csv
+grep "Toulouse,France,2019,JavaScript" < wilders.csv > Toulouse2019.csv
+grep "Toulouse,France,2017,JavaScript" < wilders.csv > Toulouse2017.csv
+cat biarritz2017.csv biarritz2019.csv Toulouse2019.csv Toulouse2017.csv | sort -u > javascript_biarritz_toulouse.csv
+cat javascript_biarritz_toulouse.csv 
+history tail
+history
+tail
+history tail -n 17
+history
+tail -n 17
+history
+history tail -17 > history.txt
+tail -n 17 < history > history.txt
+history
+tail
+grep tail history > history.txt
+cd ~/.bash_history
+ls
+find
+tail -n 30 .bash_history > history.txt
+cat history.txt 
 
